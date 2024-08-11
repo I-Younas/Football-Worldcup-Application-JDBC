@@ -1,0 +1,1656 @@
+(c) Copyright IBM Corporation 1993,2007
+Command Line Processor for DB2 Client 11.5.8.0
+
+You can issue database manager commands and SQL statements from the command 
+prompt. For example:
+    db2 => connect to sample
+    db2 => bind sample.bnd
+
+For general help, type: ?.
+For command help, type: ? command, where command can be
+the first few keywords of a database manager command. For example:
+ ? CATALOG DATABASE for help on the CATALOG DATABASE command
+ ? CATALOG          for help on all of the CATALOG commands.
+
+To exit db2 interactive mode, type QUIT at the command prompt. Outside 
+interactive mode, all commands must be prefixed with 'db2'.
+To list the current command option settings, type LIST COMMAND OPTIONS.
+
+For more detailed help, refer to the Online Reference Manual.
+
+db2 => connect to cs421
+
+   Database Connection Information
+
+ Database server        = DB2/LINUXX8664 11.5.8.0
+ SQL authorization ID   = CS421G21...
+ Local database alias   = CS421
+
+
+db2 => db2 => insert into worldcup values(2023, 'Canada')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.WORLDCUP" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into worldcup values(2001, 'Columbia')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.WORLDCUP" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into worldcup values(2018,'Germany')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.WORLDCUP" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into worldcup values(2004,'England')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.WORLDCUP" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into worldcup values(2008, 'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.WORLDCUP" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into worldcup values(2012, 'Mexico')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.WORLDCUP" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into teams values('Brazil', 'brazil.com', 'Group A', 'TeamBrazil')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into teams values('France', 'france.com', 'Group B', 'TeamFrance')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into teams values('Belgium','belgium.com','Group C','TeamBelgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into teams values('England','england.com','Group D','TeamEngland')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into teams values('Mexico','mexico.com','Group E','TeamMexico')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into teams values('Argentina','argentina.com','Group A','TeamArgentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into teams values('Morocco','morocco.com','Group B','TeamMorocco')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into teams values('Algeria','algeria.com','Group C','TeamAlgeria')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into teams values('Canada', 'canada.ca', 'Group A', 'TeamCanada')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TEAMS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into stadium values('Bell Centre', 'Montreal', 20000)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.STADIUM" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into stadium values('Olympic Stadium','Montreal',40000)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.STADIUM" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into stadium values('Commonwealth Stadium','Edmonton',35000)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.STADIUM" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into stadium values('Rogers Centre','Toronto',41500)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.STADIUM" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into stadium values('Mosaic Stadium','Regina',30000)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.STADIUM" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into matches values(01, 'Quarter Final', 120, 4, '2023-02-18', 'Bell Centre', 'Brazil', 'France')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.MATCHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into matches values(02,'Semi Final',90,2,'2023-02-19','Olympic Stadium','Algeria','Mexico')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.MATCHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into matches values(06, 'Group Stage', 100, 1, '2023-02-15', 'Bell Centre', 'Canada', 'France')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.MATCHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into matches values(07, 'Quarter Final', 90, 0, '2023-02-17', 'Olympic Stadium', 'Algeria', 'Canada')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.MATCHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into matches values(10,'Group Stage',90,3,'2023-01-12','Mosaic Stadium','Belgium','Argentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.MATCHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into matches values(08, 'Semi- Final', 120, 1,'2023-02-28', 'Bell Centre', 'Canada', 'Brazil')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.MATCHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into participant values(200, 'Brazil Player 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(201,'France Player 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(202,'England Player 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(203,'Mexican Player 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(204,'Algeria Player 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(300,'England Coach')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(301,'Brazil Coach')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(302,'Argentina Coach')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(303,'Belgium Coach')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(304,'Argentina Coach')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(100,'English Referee 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(101,'Mexican Referee 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(102,'Argentinian Referee 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(103,'French Referee 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(104,'Belgian Referee 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(105, 'Moroccan Referee 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(222, 'Christine Sinclair')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(205, 'France Player 2')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(206,'Argentinian Player 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(207, 'Belgian Player 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(106,'Belgian Referee 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(208, 'Argentinian Player 2')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(209, 'Belgian Player 2')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participant values(107, 'French Referee 1')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPANT" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into referees values(100, 5, 'England')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.REFEREES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into referees values(101,6,'Mexico')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.REFEREES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into referees values(102,7,'Argentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.REFEREES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into referees values(103,8,'France')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.REFEREES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into referees values(104,9,'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.REFEREES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into referees values(105,10,'Morocco')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.REFEREES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into referees values(106, 2, 'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.REFEREES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into referees values(107, 1, 'France')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.REFEREES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into enforcerule values(100, 01, 'Head Referee')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.ENFORCERULE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into enforcerule values(101,02,'Assistant  Referee')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.ENFORCERULE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into enforcerule values(100, 06, 'Head Referee')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.ENFORCERULE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into enforcerule values(101, 07, 'Head Referee')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.ENFORCERULE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into enforcerule values(106,10,'Head Referee')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.ENFORCERULE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into enforcerule values(107,10,'Assistant Referee')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.ENFORCERULE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into enforcerule values(101,08,'Head Referee')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.ENFORCERULE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into competitor values(200, '2000-01-01')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(201,'2004-01-02')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(202,'2000-07-01')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(203,'2002-04-12')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(204,'2001-05-11')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(300,'2003-01-10')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(301,'2002-02-15')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(302,'2004-05-15')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(303,'2001-08-19')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(304,'2002-03-16')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(222, '1983-06-12')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(205,'1997-06-15')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(206,'2000-07-25')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(207,'2000-08-25')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(208, '1990-04-17')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into competitor values(209, '1960-09-29')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COMPETITOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into players values(200, 'GoalKeeper', 01,'Brazil')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(201,'Defender',02,'France')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(202,'Midfielder',03,'Algeria')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(203,'Attacker',04, 'Mexico')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(204,'Defender',05, 'Algeria')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(222, 'Attacker', 12, 'Canada')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(205, 'Defender', 06, 'France')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(206,'Attacker',07,'Argentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(207,'GoalKeeper',01,'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(208,'Midfielder',16,'Argentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into players values(209,'Midfielder',15,'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into tickets values(600,500,01)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(601,700,02)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(602,700,02)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(603,700,02)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(604,500,06)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(605, 1000, 07)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(606, 400, 10)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(607, 400, 10)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(608, 400, 10)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into tickets values(609, 700, 08)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.TICKETS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => db2 => insert into coaches values(300,'Head Coach','England')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COACHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into coaches values(301,'Assistant Coach','Brazil')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COACHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into coaches values(302,'Head Coach','Argentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COACHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into coaches values(303,'Head Coach','Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COACHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into coaches values(304,'Head Coach','Argentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.COACHES" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => db2 => insert into seats values(01,'Bell Centre','Standard',TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into seats values(02,'Olympic Stadium','Executive',TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into seats values(03,'Commonwealth Stadium','Standard',TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into seats values(04,'Rogers Centre','Executive',TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into seats values(05,'Mosaic Stadium','Standard',FALSE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into seats values(03,'Olympic Stadium','Standard',TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into seats values(04,'Olympic Stadium','Standard',TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into seats values(01,'Mosaic Stadium','Standard',TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into seats values(02,'Mosaic Stadium','Standard',TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SEATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into customer values('x@a.ca','123456789','Max')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.CUSTOMER" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into customer values('a@x.ca','155555789','Alex')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.CUSTOMER" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into customer values('z@y.ca','123222289','Tom')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.CUSTOMER" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into customer values('h@m.ca','432156789','Smith')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.CUSTOMER" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into customer values('p@o.ca','999956789','Hailey')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.CUSTOMER" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into goals values(01,1,TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into goals values(02,1,FALSE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into goals values(06,1,FALSE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into goals values(07,1,TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into goals values(10, 1, FALSE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into goals values(10, 2, FALSE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into goals values(10, 3, TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into goals values(10, 4, TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into goals values(08,1,TRUE)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.GOALS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into reserve values(600, 'x@a.ca', 01,'Bell Centre', '2023-02-19')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.RESERVE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into reserve values(601, 'a@x.ca', 02, 'Olympic Stadium', '2023-01-04')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.RESERVE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into reserve values(602, 'z@y.ca', 03, 'Olympic Stadium', '2023-01-04')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.RESERVE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into reserve values(603, 'h@m.ca', 04, 'Olympic Stadium', '2023-01-04')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.RESERVE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into reserve values(604, 'p@o.ca', 01, 'Bell Centre', '2023-02-10')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.RESERVE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into reserve values(605, 'x@a.ca', 02,'Olympic Stadium', '2023-02-01')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.RESERVE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into reserve values(606,'x@a.ca',01,'Mosaic Stadium','2023-01-12')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.RESERVE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into reserve values(607,'h@m.ca',02,'Mosaic Stadium','2023-01-11')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.RESERVE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into playerstats values(01,200,0,NULL,'Goalkeeper',90)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(01,201,0,51,'Right Back',51)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(02,202,0,NULL,'Central Midfielder',90)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(02,203,0,NULL,'Striker',80)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(07,204,0,NULL,'Right Back',70)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(06, 222, 0, NULL, 'Striker', 90)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(07,222,0,NULL,'Striker',90)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(10,206,0,NULL,'Striker',90)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(10,207,0,NULL,'Goalkeeper',90)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(10, 208, 0, 5, 'Central Midfielder', 5 )
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(10, 209, 0, NULL, 'Central Midfielder', 90)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(08,222,0,NULL,'Striker',120)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into playerstats values(08, 200, 0, NULL, 'GoalKeeper', 120)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYERSTATS" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => insert into played values(2023,01)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYED" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into played values(2023,02)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYED" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into played values(2023,06)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYED" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into played values(2023,07)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYED" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into played values(2023,10)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYED" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into played values(2023,08)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PLAYED" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => db2 => db2 => insert into participate values(2023,'Canada')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPATE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participate values(2023,'France')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPATE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participate values(2023,'Morocco')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPATE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participate values(2023,'Argentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPATE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participate values(2023,'Mexico')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPATE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participate values(2023,'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.PARTICIPATE" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into participate values(2023,'Brazil')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into participate values(2023,'Algeria')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into participate values(2023, 'England')
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into scoredfor values(01,1,'Brazil')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDFOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredfor values(02,1,'Algeria')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDFOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredfor values(06,1,'Canada')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDFOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredfor values(07,1, 'Algeria')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDFOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredfor values(10, 1, 'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDFOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredfor values(10, 2, 'Argentina')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDFOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredfor values(10, 3, 'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDFOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredfor values(10,4,'Belgium')
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDFOR" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredfor values(08,1,'Canada')
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into scoredby values(01,1,200)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDBY" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredby values(02,1,204)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDBY" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredby values(06,1,222)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDBY" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredby values(07,01,204)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDBY" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredby values(10,1,207)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDBY" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredby values(10,2,206)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDBY" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredby values(10,3,209)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDBY" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredby values(10,4,207)
+DB21034E  The command was processed as an SQL statement because it was not a 
+valid Command Line Processor command.  During SQL processing it returned:
+SQL0803N  One or more values in the INSERT statement, UPDATE statement, or 
+foreign key update caused by a DELETE statement are not valid because the 
+primary key, unique constraint or unique index identified by "1" constrains 
+table "CS421G210.SCOREDBY" from having duplicate values for the index key.  
+SQLSTATE=23505
+
+db2 => insert into scoredby values(08,1,222)
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => 

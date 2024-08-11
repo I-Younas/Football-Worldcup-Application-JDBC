@@ -1,0 +1,22 @@
+connect to cs421;
+
+drop table WORLDCUP;
+drop table MATCHES;
+drop table PARTICIPANT;
+drop table REFEREES;
+drop table ENFORCERULE;
+drop table COMPETITOR;
+drop table PLAYERS;
+drop table TICKETS;
+drop table COACHES;
+drop table SEATS;
+drop table CUSTOMER;
+drop table STADIUM;
+drop table GOALS;
+drop table RESERVE;
+drop table SCOREDBY;
+drop table SCOREDFOR;
+drop table TEAMS;
+drop table PARTICIPATE;
+drop table PLAYED;
+drop table PLAYERSTATS;
